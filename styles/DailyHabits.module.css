@@ -1,0 +1,6 @@
+.dailyHabitsContainer {
+  background-image: url('/assets/Illustration.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: var(--chakra-colors-primary2-900);
+}

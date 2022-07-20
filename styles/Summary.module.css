@@ -1,0 +1,49 @@
+.OuterWrapper {
+  --spWidth: 45px;
+  --spHeight: 200px;
+  --spBottomAllowance: 30px;
+  --spRadius: 10px;
+  position: relative;
+  width: var(--spWidth);
+  height: var(--spHeight);
+  margin-bottom: var(--spBottomAllowance);
+}
+
+.Wrapper {
+  position: relative;
+  width: var(--spHeight);
+  top: calc(var(--spHeight) / 2);
+  margin-left: calc((var(--spHeight) - var(--spWidth)) * 0.50 * -1);
+}
+
+.summaryProgress {
+  border-radius: var(--spRadius);
+  height: 7px !important;
+  background-color: #f7f8fc !important;
+  transform: rotate(-90deg);
+}
+
+.summaryProgress [role="progressbar"] {
+  border-radius: var(--spRadius);
+  background-color: var(--chakra-colors-primary1-900) !important;
+}
+
+.Text {
+  position: absolute;
+  bottom: calc(var(--spBottomAllowance) * -1);
+  font-size: 0.7rem;
+  text-align: center;
+  width: 100%;
+}
+
+.select {
+  color: #A3A5C0;
+  border-radius: 6px;
+  background: #fff;
+  padding: 8px;
+}
+
+.select svg {
+  width: 0.7em !important;
+  height: 0.7em !important;
+}
